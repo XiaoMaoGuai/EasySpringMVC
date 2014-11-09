@@ -22,4 +22,6 @@ public interface UserDao {
 	User findById(int userId);
 
 	List<User> findAll();
+
+	boolean isUserCanLoginIn(User user);
 }

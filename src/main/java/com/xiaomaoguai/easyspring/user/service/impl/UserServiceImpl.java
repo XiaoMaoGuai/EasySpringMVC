@@ -42,4 +42,8 @@ public class UserServiceImpl implements UserService{
 		return userDao.findAll();
 	}
 
+	public boolean isUserCanLoginIn(User user) {
+		return userDao.isUserCanLoginIn(user);
+	}
+
 }

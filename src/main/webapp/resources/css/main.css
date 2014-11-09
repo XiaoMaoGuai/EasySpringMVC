@@ -1,0 +1,20 @@
+@charset "utf-8";
+//登陆页笑脸
+.account_modify_ok {
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	width: 1000px;
+	position: absolute;
+	background: url(../img/regist_ok_icon.png) no-repeat 400px 0px;
+	color: #3a8900;
+}
+.account_modify_ok_no {
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	width: 1000px;
+	position: absolute;
+	background: url(../img/cry_icon.png) no-repeat 400px 0px;
+	color: #3a8900;
+}

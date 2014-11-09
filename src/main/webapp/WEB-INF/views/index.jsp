@@ -7,6 +7,5 @@
 <title>Insert title here</title>
 </head>
 <body>
-	大家好，才是真的好！
 </body>
 </html>

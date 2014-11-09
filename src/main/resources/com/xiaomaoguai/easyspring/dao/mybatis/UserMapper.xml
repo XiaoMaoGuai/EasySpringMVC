@@ -194,4 +194,9 @@
 		#{lastLoginTime,jdbcType=TIMESTAMP}
 		where ID = #{id,jdbcType=INTEGER}
 	</update>
+	<select id="findUserByAccountAndPass" flushCache="true" statementType="PREPARED"
+		resultType="int">
+		SELECT COUNT(*) FROM user 
+		WHERE ACCOUNT=#{account} AND PASSWORD = #{password}
+	</select>
 </mapper>

@@ -43,4 +43,8 @@ public class UserDaoImpl implements UserDao{
 		return userMapper.findAll();
 	}
 
+	public boolean isUserCanLoginIn(User user) {
+		return userMapper.findUserByAccountAndPass(user) == 0?false:true;
+	}
+
 }
