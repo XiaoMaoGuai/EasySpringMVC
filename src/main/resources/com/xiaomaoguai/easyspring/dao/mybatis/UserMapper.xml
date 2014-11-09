@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiaomaoguai.easyspring.user.dao.UserMapper">
+	<resultMap id="User" type="com.xiaomaoguai.easyspring.user.model.User">
+		<id column="ID" property="id" jdbcType="INTEGER" />
+		<result column="ACCOUNT" property="account" jdbcType="VARCHAR" />
+		<result column="PASSWORD" property="password" jdbcType="VARCHAR" />
+		<result column="EMAIL" property="email" jdbcType="VARCHAR" />
+		<result column="EMAIL_VALIDATED" property="emailValidated" jdbcType="INTEGER" />
+		<result column="USER_TYPE" property="userType" jdbcType="VARCHAR" />
+		<result column="NAME" property="name" jdbcType="VARCHAR" />
+		<result column="ICON" property="icon" jdbcType="VARCHAR" />
+		<result column="TELEPHONE" property="telephone" jdbcType="VARCHAR" />
+		<result column="REGISTE_TIME" property="registeTime" jdbcType="TIMESTAMP" />
+		<result column="SESSION_ID" property="sessionId" jdbcType="VARCHAR" />
+		<result column="LAST_LOGIN_TIME" property="lastLoginTime" jdbcType="TIMESTAMP" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		ID, ACCOUNT, PASSWORD, EMAIL, EMAIL_VALIDATED, USER_TYPE,
+		NAME, ICON,
+		TELEPHONE,
+		REGISTE_TIME, SESSION_ID, LAST_LOGIN_TIME
+	</sql>
+	<select id="selectByPrimaryKey" resultMap="User"
+		parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from user
+		where ID = #{id,jdbcType=INTEGER}
+	</select>
+	<select id="findAll" resultMap="User">
+		select
+		<include refid="Base_Column_List" />
+		from user
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from user
+		where ID = #{id,jdbcType=INTEGER}
+	</delete>
+	<insert id="insert" parameterType="com.xiaomaoguai.easyspring.user.model.User">
+		insert into user (ID, ACCOUNT,
+		PASSWORD,
+		EMAIL, EMAIL_VALIDATED, USER_TYPE,
+		NAME, ICON, TELEPHONE,
+		REGISTE_TIME, SESSION_ID, LAST_LOGIN_TIME
+		)
+		values
+		(#{id,jdbcType=INTEGER}, #{account,jdbcType=VARCHAR},
+		#{password,jdbcType=VARCHAR},
+		#{email,jdbcType=VARCHAR},
+		#{emailValidated,jdbcType=INTEGER}, #{userType,jdbcType=VARCHAR},
+		#{name,jdbcType=VARCHAR}, #{icon,jdbcType=VARCHAR},
+		#{telephone,jdbcType=VARCHAR},
+		#{registeTime,jdbcType=TIMESTAMP},
+		#{sessionId,jdbcType=VARCHAR}, #{lastLoginTime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+	<insert id="insertSelective" parameterType="com.xiaomaoguai.easyspring.user.model.User">
+		insert into user
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				ID,
+			</if>
+			<if test="account != null">
+				ACCOUNT,
+			</if>
+			<if test="password != null">
+				PASSWORD,
+			</if>
+			<if test="email != null">
+				EMAIL,
+			</if>
+			<if test="emailValidated != null">
+				EMAIL_VALIDATED,
+			</if>
+			<if test="userType != null">
+				USER_TYPE,
+			</if>
+			<if test="name != null">
+				NAME,
+			</if>
+			<if test="icon != null">
+				ICON,
+			</if>
+			<if test="telephone != null">
+				TELEPHONE,
+			</if>
+			<if test="registeTime != null">
+				REGISTE_TIME,
+			</if>
+			<if test="sessionId != null">
+				SESSION_ID,
+			</if>
+			<if test="lastLoginTime != null">
+				LAST_LOGIN_TIME,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="account != null">
+				#{account,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null">
+				#{password,jdbcType=VARCHAR},
+			</if>
+			<if test="email != null">
+				#{email,jdbcType=VARCHAR},
+			</if>
+			<if test="emailValidated != null">
+				#{emailValidated,jdbcType=INTEGER},
+			</if>
+			<if test="userType != null">
+				#{userType,jdbcType=VARCHAR},
+			</if>
+			<if test="name != null">
+				#{name,jdbcType=VARCHAR},
+			</if>
+			<if test="icon != null">
+				#{icon,jdbcType=VARCHAR},
+			</if>
+			<if test="telephone != null">
+				#{telephone,jdbcType=VARCHAR},
+			</if>
+			<if test="registeTime != null">
+				#{registeTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sessionId != null">
+				#{sessionId,jdbcType=VARCHAR},
+			</if>
+			<if test="lastLoginTime != null">
+				#{lastLoginTime,jdbcType=TIMESTAMP},
+			</if>
+		</trim>
+	</insert>
+	<update id="updateByPrimaryKeySelective" parameterType="com.xiaomaoguai.easyspring.user.model.User">
+		update user
+		<set>
+			<if test="account != null">
+				ACCOUNT = #{account,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null">
+				PASSWORD = #{password,jdbcType=VARCHAR},
+			</if>
+			<if test="email != null">
+				EMAIL = #{email,jdbcType=VARCHAR},
+			</if>
+			<if test="emailValidated != null">
+				EMAIL_VALIDATED = #{emailValidated,jdbcType=INTEGER},
+			</if>
+			<if test="userType != null">
+				USER_TYPE = #{userType,jdbcType=VARCHAR},
+			</if>
+			<if test="name != null">
+				NAME = #{name,jdbcType=VARCHAR},
+			</if>
+			<if test="icon != null">
+				ICON = #{icon,jdbcType=VARCHAR},
+			</if>
+			<if test="telephone != null">
+				TELEPHONE = #{telephone,jdbcType=VARCHAR},
+			</if>
+			<if test="registeTime != null">
+				REGISTE_TIME = #{registeTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sessionId != null">
+				SESSION_ID = #{sessionId,jdbcType=VARCHAR},
+			</if>
+			<if test="lastLoginTime != null">
+				LAST_LOGIN_TIME = #{lastLoginTime,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where ID = #{id,jdbcType=INTEGER}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="com.xiaomaoguai.easyspring.user.model.User">
+		update user
+		set
+		ACCOUNT = #{account,jdbcType=VARCHAR},
+		PASSWORD =
+		#{password,jdbcType=VARCHAR},
+		EMAIL = #{email,jdbcType=VARCHAR},
+		EMAIL_VALIDATED = #{emailValidated,jdbcType=INTEGER},
+		USER_TYPE =
+		#{userType,jdbcType=VARCHAR},
+		NAME = #{name,jdbcType=VARCHAR},
+		ICON =
+		#{icon,jdbcType=VARCHAR},
+		TELEPHONE = #{telephone,jdbcType=VARCHAR},
+		REGISTE_TIME = #{registeTime,jdbcType=TIMESTAMP},
+		SESSION_ID =
+		#{sessionId,jdbcType=VARCHAR},
+		LAST_LOGIN_TIME =
+		#{lastLoginTime,jdbcType=TIMESTAMP}
+		where ID = #{id,jdbcType=INTEGER}
+	</update>
+</mapper>

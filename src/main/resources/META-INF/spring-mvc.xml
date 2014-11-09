@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<import resource="classpath*:META-INF/web/*.xml" />
+
+	<!-- 防止JSP等静态资源被拦截 -->
+	<mvc:default-servlet-handler />
+
+	<!-- 激活@Controller模式 -->
+	<mvc:annotation-driven />
+
+	<!-- <util:list id="messageConverters"> -->
+	<!-- <bean -->
+	<!-- class="org.springframework.http.converter.BufferedImageHttpMessageConverter" 
+		/> -->
+	<!-- <bean -->
+	<!-- class="org.springframework.http.converter.ByteArrayHttpMessageConverter" 
+		/> -->
+	<!-- <bean class="com.xiaomaoguai.lib.web.bind.StringHttpMessageConverter"> -->
+	<!-- <property name="supportedMediaTypes"> -->
+	<!-- <util:list> -->
+	<!-- <value>text/html</value> -->
+	<!-- <value>application/xaml+xml</value> -->
+	<!-- </util:list> -->
+	<!-- </property> -->
+	<!-- <property name="responseContextTypeMapping"> -->
+	<!-- <util:map> -->
+	<!-- <entry key="application/xaml+xml" value="text/html" /> -->
+	<!-- </util:map> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+	<!-- <bean -->
+	<!-- class="org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter" 
+		/> -->
+	<!-- <bean -->
+	<!-- class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter" -->
+	<!-- p:marshaller-ref="xmlMarshaller" p:unmarshaller-ref="xmlMarshaller"> -->
+	<!-- </bean> -->
+	<!-- <bean -->
+	<!-- class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" 
+		/> -->
+	<!-- </util:list> -->
+
+	<!-- <bean -->
+	<!-- class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" -->
+	<!-- p:messageConverters-ref="messageConverters"> -->
+	<!-- </bean> -->
+
+	<!-- <bean -->
+	<!-- class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" -->
+	<!-- p:messageConverters-ref="messageConverters"> -->
+	<!-- <property name="webBindingInitializer"> -->
+	<!-- Define the web binding initializers which implement org.springframework.web.bind.WebDataBinder -->
+	<!-- here. You can use WebBinding to register customer property editor which 
+		is -->
+	<!-- implement java.beans.PropertyEditorSupport. e.g binder.registerCustomEditor(User.class, -->
+	<!-- new UserEditor()); -->
+	<!-- <bean class="org.springframework.web.bind.support.WebBindingInitializer" 
+		/> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+	<!-- 协商多种视图解析器 -->
+	<!-- <bean -->
+	<!-- class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver" -->
+	<!-- p:order="0" p:ignoreAcceptHeader="true" p:favorPathExtension="false" -->
+	<!-- p:favorParameter="true" p:parameterName="format" p:defaultContentType="text/html"> -->
+	<!-- <property name="mediaTypes"> -->
+	<!-- <map> -->
+	<!-- <entry key="html" value="text/html" /> -->
+	<!-- <entry key="xml" value="application/xml" /> -->
+	<!-- <entry key="json" value="application/json" /> -->
+	<!-- </map> -->
+	<!-- </property> -->
+	<!-- <property name="defaultViews"> -->
+	<!-- <list> -->
+	<!-- <bean -->
+	<!-- class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" -->
+	<!-- p:renderedAttributes="userList" /> -->
+	<!-- <bean class="org.springframework.web.servlet.view.xml.MarshallingView" -->
+	<!-- p:modelKey="userList" p:marshaller-ref="xmlMarshaller" /> -->
+	<!-- </list> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+	<!-- 上传要配置的东西 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="100000" />
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+	<!-- Spring MVC JSON配置 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<bean id="fastJsonHttpMessageConverter"
+					class="com.xiaomaoguai.easyspring.utils.FastJsonHttpMessageConverter">
+					<property name="supportedMediaTypes">
+						<list>
+							<value>text/html;charset=UTF-8</value> <!-- 避免IE出现下载JSON文件的情况 -->
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+</beans>
