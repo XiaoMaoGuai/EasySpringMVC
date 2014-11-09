@@ -67,29 +67,6 @@
 	<!-- </property> -->
 	<!-- </bean> -->
 
-	<!-- 协商多种视图解析器 -->
-	<bean
-		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver"
-		p:order="0" p:ignoreAcceptHeader="true" p:favorPathExtension="false"
-		p:favorParameter="true" p:parameterName="format" p:defaultContentType="text/html">
-		<property name="mediaTypes">
-			<map>
-				<entry key="html" value="text/html" />
-				<entry key="xml" value="application/xml" />
-				<entry key="json" value="application/json" />
-			</map>
-		</property>
-		<property name="defaultViews">
-			<list>
-				<bean
-					class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"
-					p:renderedAttributes="userList" />
-				<bean class="org.springframework.web.servlet.view.xml.MarshallingView"
-					p:modelKey="userList" p:marshaller-ref="xmlMarshaller" />
-			</list>
-		</property>
-	</bean>
-
 	<!-- 上传要配置的东西 -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
