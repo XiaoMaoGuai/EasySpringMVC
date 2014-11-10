@@ -15,7 +15,8 @@
 <link rel="stylesheet" href="${ctx}/resources/AmazeUI-1.0.0/assets/css/amazeui.min.css" />
 <script type="text/javascript" src="${ctx}/resources/Jslib/jquery-1.11.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="${ctx}/resources/Jslib/extJquery.js" charset="utf-8"></script>
-<script type="text/javascript" src="${ctx}/resources/js/user/user.js"></script>
+<script type="text/javascript">var CONTEXT_PATH = '${ctx}';</script>
+<script type="text/javascript" src="${ctx}/resources/js/user/user.js" charset="utf-8"></script>
 <script type="text/javascript">
 	$(function(){
 		user.initLoginForm();

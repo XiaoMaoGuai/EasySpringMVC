@@ -27,7 +27,7 @@ public class UserAction {
 	private UserService userService;
 	
 	@RequestMapping("login.xhtml")
-	public @ResponseBody MessageModel listAll(ModelMap map,User user) {
+	public @ResponseBody MessageModel login(ModelMap map,User user) {
 		MessageModel messageModel = new MessageModel();
 		UserForm.validateForLogin(user);
 		boolean b = userService.isUserCanLoginIn(user);

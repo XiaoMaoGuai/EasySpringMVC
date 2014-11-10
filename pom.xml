@@ -134,6 +134,11 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.13</version>
 		</dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.4</version>
+		</dependency>
 		<!-- 邮件支持 begin -->
 		<dependency>
 			<groupId>org.springframework</groupId>

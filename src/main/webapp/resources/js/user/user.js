@@ -4,7 +4,7 @@
 var user = {
 		
 		getRootPath : function(){
-			return '${ctx}' + "user/";
+			return CONTEXT_PATH + "/user/";
 		},
 		
 		initLoginForm : function(){
@@ -16,13 +16,6 @@ var user = {
 						"remenber":remenber,
 				};
 				console.info(data);
-				postReturnJson(data,user.getRootPath() + "login.xhtml",function(data){
-					if(data.code == 0){
-						console.info("登陆成功");
-					}else{
-						console.info("登陆失败");
-					}
-				});
 			});
 		},
 };
