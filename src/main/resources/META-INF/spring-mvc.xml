@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
@@ -16,62 +16,20 @@
 	<!-- 激活@Controller模式 -->
 	<mvc:annotation-driven />
 
-	<util:list id="messageConverters">
-		<bean
-			class="org.springframework.http.converter.BufferedImageHttpMessageConverter" />
-		<bean
-			class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
-		<bean class="com.xiaomaoguai.lib.web.bind.StringHttpMessageConverter">
-			<property name="supportedMediaTypes">
-				<util:list>
-					<value>text/html</value>
-					<value>application/xaml+xml</value>
-				</util:list>
-			</property>
-			<property name="responseContextTypeMapping">
-				<util:map>
-					<entry key="application/xaml+xml" value="text/html" />
-				</util:map>
-			</property>
-		</bean>
-		<bean
-			class="org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter" />
-		<bean
-			class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter"
-			p:marshaller-ref="xmlMarshaller" p:unmarshaller-ref="xmlMarshaller">
-		</bean>
-	</util:list>
-
-	<bean
-		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"
-		p:messageConverters-ref="messageConverters">
-	</bean>
-
-	<bean id="xmlMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller">
-		<property name="streamDriver">
-			<bean class="com.thoughtworks.xstream.io.xml.StaxDriver" />
-		</property>
-	</bean>
-
-	<!-- 协商多种视图解析器 -->
-	<bean
-		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver"
-		p:order="0" p:ignoreAcceptHeader="true" p:favorPathExtension="false"
-		p:favorParameter="true" p:parameterName="format" p:defaultContentType="text/html">
-		<property name="mediaTypes">
-			<map>
-				<entry key="html" value="text/html" />
-				<entry key="xml" value="application/xml" />
-				<entry key="json" value="application/json" />
-			</map>
-		</property>
-		<property name="defaultViews">
+	<bean id="mappingJacksonHttpMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+		<property name="supportedMediaTypes">
 			<list>
-				<!-- <bean -->
-				<!-- class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" -->
-				<!-- p:renderedAttributes="userList" /> -->
-				<!-- <bean class="org.springframework.web.servlet.view.xml.MarshallingView" -->
-				<!-- p:modelKey="userList" p:marshaller-ref="xmlMarshaller" /> -->
+				<value>text/html;charset=UTF-8</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="mappingJacksonHttpMessageConverter" />
 			</list>
 		</property>
 	</bean>
@@ -82,12 +40,6 @@
 		p:cookieName="clientLanguage" p:cookieMaxAge="100000" p:cookiePath="/"
 		p:defaultLocale="zh_CN" />
 
-
-	<!-- 上传要配置的东西 -->
-	<bean id="multipartResolver"
-		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="maxUploadSize" value="100000" />
-	</bean>
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

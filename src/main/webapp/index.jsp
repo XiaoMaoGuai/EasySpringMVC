@@ -5,6 +5,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-	<jsp:forward page="/index.xhtml"></jsp:forward>
+	<jsp:forward page="/index"></jsp:forward>
 </body>
 </html>

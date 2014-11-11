@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.xiaomaoguai.easyspring.user.dao.UserMapper">
+<mapper namespace="com.xiaomaoguai.easyspring.user.dao.mybatis.UserMapper">
 	<resultMap id="User" type="com.xiaomaoguai.easyspring.user.model.User">
 		<id column="ID" property="id" jdbcType="INTEGER" />
 		<result column="ACCOUNT" property="account" jdbcType="VARCHAR" />
@@ -21,7 +21,7 @@
 		TELEPHONE,
 		REGISTE_TIME, SESSION_ID, LAST_LOGIN_TIME
 	</sql>
-	<select id="selectByPrimaryKey" resultMap="User"
+	<select id="findById" resultType="com.xiaomaoguai.easyspring.user.model.User"
 		parameterType="java.lang.Integer">
 		select
 		<include refid="Base_Column_List" />

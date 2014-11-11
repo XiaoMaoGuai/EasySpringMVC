@@ -11,6 +11,16 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lte IE 9]>
+     <script type="text/javascript">
+         var unsupport = true;
+     </script>
+<![endif]-->
+<script type="text/javascript">     
+      if(typeof unsupport !="undefined" && unsupport == true){
+           window.location.href = "${pageContext.request.contextPath}" + "/notsupport.xhtml";  
+      }      
+</script>
 <link rel="alternate icon" type="image/png" href="${ctx}/resources/AmazeUI-1.0.0/assets/i/favicon.png">
 <link rel="stylesheet" href="${ctx}/resources/AmazeUI-1.0.0/assets/css/amazeui.min.css" />
 <script type="text/javascript" src="${ctx}/resources/Jslib/jquery-1.11.1.min.js" charset="utf-8"></script>

@@ -1,4 +1,4 @@
-package com.xiaomaoguai.easyspring.user.dao.impl;
+package com.xiaomaoguai.easyspring.user.dao.mybatis;
 
 import java.util.List;
 
@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.xiaomaoguai.easyspring.user.dao.UserDao;
-import com.xiaomaoguai.easyspring.user.dao.UserMapper;
 import com.xiaomaoguai.easyspring.user.model.User;
 
 /*
@@ -36,7 +35,7 @@ public class UserDaoImpl implements UserDao{
 	}
 
 	public User findById(int userId) {
-		return userMapper.selectByPrimaryKey(userId);
+		return userMapper.findById(userId);
 	}
 
 	public List<User> findAll() {

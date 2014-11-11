@@ -32,7 +32,7 @@ public class AppTests {
 
 	@Test
 	public void simple() throws Exception {
-		mockMvc.perform(get("/index.xhtml")).andExpect(status().isOk())
-				.andExpect(view().name("index"));
+		mockMvc.perform(get("/index")).andExpect(status().isOk())
+				.andExpect(view().name("user/login"));
 	}
 }

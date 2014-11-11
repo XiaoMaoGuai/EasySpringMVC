@@ -8,6 +8,7 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd"
     default-autowire="byName">
 
+	<context:annotation-config />
 	<import resource="classpath*:META-INF/dao/*.xml"/>
 
 </beans>

@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @SessionAttributes({ "ctx", "language" })
 public class IndexAction {
 
-	@RequestMapping(value = "index.xhtml", method = RequestMethod.GET)
+	@RequestMapping(value = "index", method = RequestMethod.GET)
 	public String index(HttpServletRequest request, ModelMap model) {
 		// 工程根目录
 		model.put("ctx", request.getContextPath());

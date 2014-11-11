@@ -1,10 +1,12 @@
 package com.xiaomaoguai.easyspring.user.web.action;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.xiaomaoguai.easyspring.user.form.UserForm;
 import com.xiaomaoguai.easyspring.user.model.User;
@@ -19,14 +21,14 @@ import com.xiaomaoguai.easyspring.web.model.MessageModel;
  * @Version:1.0.0
  */
 
-@Controller
 @RequestMapping("user")
+@RestController
 public class UserAction {
 
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping("login.xhtml")
+	@RequestMapping("login")
 	public @ResponseBody MessageModel login(ModelMap map,User user) {
 		MessageModel messageModel = new MessageModel();
 		UserForm.validateForLogin(user);
@@ -40,5 +42,12 @@ public class UserAction {
 			messageModel.setMsg("login error");
 		}
 		return messageModel;
+	}
+	
+	@RequestMapping("queryList")
+	public String queryList(ModelMap map) {
+		List<User> users = userService.findAll();
+		map.addAttribute("users", users);
+		return "user/userList";
 	}
 }
