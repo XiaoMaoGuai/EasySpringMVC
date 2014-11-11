@@ -1,0 +1,184 @@
+2014-11-11 10:39:59 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 10:39:59 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1dd6264, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1fe63b9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e5fc98, org.springframework.test.context.transaction.TransactionalTestExecutionListener@469c48, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@e61fe6]
+2014-11-11 10:40:00 [INFO ] Loading XML bean definitions from URL [file:src/main/resources/META-INF/spring-mvc.xml]
+2014-11-11 10:40:01 [INFO ] Loading XML bean definitions from file [D:\workSpace\git\EasySpringMVC\target\classes\META-INF\web\easyspringmvc-web.xml]
+2014-11-11 10:40:01 [INFO ] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1c758ac: startup date [Tue Nov 11 10:40:01 CST 2014]; root of context hierarchy
+2014-11-11 10:40:02 [INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2014-11-11 10:40:02 [INFO ] Mapped "{[//index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xiaomaoguai.easyspring.web.action.IndexAction.index(javax.servlet.http.HttpServletRequest,org.springframework.ui.ModelMap)
+2014-11-11 10:40:03 [INFO ] Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1c758ac: startup date [Tue Nov 11 10:40:01 CST 2014]; root of context hierarchy
+2014-11-11 10:40:03 [INFO ] Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1c758ac: startup date [Tue Nov 11 10:40:01 CST 2014]; root of context hierarchy
+2014-11-11 10:40:03 [INFO ] Initializing Spring FrameworkServlet ''
+2014-11-11 10:40:03 [INFO ] FrameworkServlet '': initialization started
+2014-11-11 10:40:03 [INFO ] FrameworkServlet '': initialization completed in 28 ms
+2014-11-11 10:40:04 [INFO ] Closing org.springframework.web.context.support.GenericWebApplicationContext@1c758ac: startup date [Tue Nov 11 10:40:01 CST 2014]; root of context hierarchy
+2014-11-11 10:41:25 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 10:41:25 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f4468b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@c4c815, org.springframework.test.context.support.DirtiesContextTestExecutionListener@82f6ef, org.springframework.test.context.transaction.TransactionalTestExecutionListener@fc185, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b1d11]
+2014-11-11 10:41:25 [INFO ] Loading XML bean definitions from URL [file:src/main/resources/META-INF/spring-mvc.xml]
+2014-11-11 10:41:25 [INFO ] Loading XML bean definitions from file [D:\workSpace\git\EasySpringMVC\target\classes\META-INF\web\easyspringmvc-web.xml]
+2014-11-11 10:41:25 [INFO ] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@19c0f4a: startup date [Tue Nov 11 10:41:25 CST 2014]; root of context hierarchy
+2014-11-11 10:41:25 [INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2014-11-11 10:41:25 [INFO ] Mapped "{[//index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.xiaomaoguai.easyspring.web.action.IndexAction.index(javax.servlet.http.HttpServletRequest,org.springframework.ui.ModelMap)
+2014-11-11 10:41:25 [INFO ] Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@19c0f4a: startup date [Tue Nov 11 10:41:25 CST 2014]; root of context hierarchy
+2014-11-11 10:41:25 [INFO ] Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@19c0f4a: startup date [Tue Nov 11 10:41:25 CST 2014]; root of context hierarchy
+2014-11-11 10:41:25 [INFO ] Initializing Spring FrameworkServlet ''
+2014-11-11 10:41:25 [INFO ] FrameworkServlet '': initialization started
+2014-11-11 10:41:25 [INFO ] FrameworkServlet '': initialization completed in 10 ms
+2014-11-11 10:41:26 [INFO ] Closing org.springframework.web.context.support.GenericWebApplicationContext@19c0f4a: startup date [Tue Nov 11 10:41:25 CST 2014]; root of context hierarchy
+2014-11-11 10:55:08 [INFO ] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@dbe50f: startup date [Tue Nov 11 10:55:08 CST 2014]; root of context hierarchy
+2014-11-11 10:55:09 [INFO ] Loading XML bean definitions from file [D:\workSpace\git\EasySpringMVC\src\main\resources\META-INF\beans\spring-mybatis.xml]
+2014-11-11 10:55:09 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 10:55:10 [INFO ] org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@98ac89
+2014-11-11 11:07:31 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@909414, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@114c583, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1466a6a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1dced80, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@134f01b]
+2014-11-11 11:07:32 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-application.xml]
+2014-11-11 11:07:32 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-dao.xml]
+2014-11-11 11:07:32 [INFO ] Loading XML bean definitions from file [D:\workSpace\git\EasySpringMVC\target\classes\META-INF\dao\easyspringmvc-dao.xml]
+2014-11-11 11:07:32 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-service.xml]
+2014-11-11 11:07:32 [INFO ] Loading XML bean definitions from file [D:\workSpace\git\EasySpringMVC\target\classes\META-INF\service\easyspringmvc-service.xml]
+2014-11-11 11:07:32 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 11:07:33 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@f926e6: startup date [Tue Nov 11 11:07:32 CST 2014]; root of context hierarchy
+2014-11-11 11:07:33 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 11:07:35 [INFO ] Began transaction (1) for test context [DefaultTestContext@2ed190 testClass = UserServiceTest, testInstance = com.xiaomaoguai.easyspring.action.test.UserServiceTest@13b9122, testMethod = testFindAll@UserServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@18432b testClass = UserServiceTest, locations = '{classpath*:META-INF/beans/spring-application.xml, classpath*:META-INF/beans/spring-dao.xml, classpath*:META-INF/beans/spring-service.xml, classpath*:META-INF/beans/spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@46731d]; rollback [true]
+2014-11-11 11:07:35 [INFO ] Rolled back transaction for test context [DefaultTestContext@2ed190 testClass = UserServiceTest, testInstance = com.xiaomaoguai.easyspring.action.test.UserServiceTest@13b9122, testMethod = testFindAll@UserServiceTest, testException = org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.xiaomaoguai.easyspring.user.dao.UserDao.findAll, mergedContextConfiguration = [MergedContextConfiguration@18432b testClass = UserServiceTest, locations = '{classpath*:META-INF/beans/spring-application.xml, classpath*:META-INF/beans/spring-dao.xml, classpath*:META-INF/beans/spring-service.xml, classpath*:META-INF/beans/spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2014-11-11 11:07:35 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@f926e6: startup date [Tue Nov 11 11:07:32 CST 2014]; root of context hierarchy
+2014-11-11 11:27:13 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 11:27:13 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e9a829, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a00e3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8b7f67, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c7a4e4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@178f375]
+2014-11-11 11:27:14 [INFO ] Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2014-11-11 11:27:14 [ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a00e3] to prepare test instance [com.xiaomaoguai.easyspring.action.test.USerService@d8062c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:74)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:116)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:82)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:199)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:251)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:253)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:216)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:82)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:60)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:67)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:162)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring-mybatis.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:251)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:253)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:260)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:63)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:83)
+	... 25 more
+Caused by: java.io.FileNotFoundException: class path resource [spring-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 37 more
+2014-11-11 11:28:01 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 11:28:01 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a227af, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@386f16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ee3a2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@90b489, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b06cab]
+2014-11-11 11:28:01 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 11:28:02 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@1529185: startup date [Tue Nov 11 11:28:02 CST 2014]; root of context hierarchy
+2014-11-11 11:28:02 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 11:28:03 [ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@386f16] to prepare test instance [com.xiaomaoguai.easyspring.action.test.USerService@c51bb7]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.xiaomaoguai.easyspring.action.test.USerService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.xiaomaoguai.easyspring.user.service.UserService com.xiaomaoguai.easyspring.action.test.USerService.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.xiaomaoguai.easyspring.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:82)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:199)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:251)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:253)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:216)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:82)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:60)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:67)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:162)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.xiaomaoguai.easyspring.user.service.UserService com.xiaomaoguai.easyspring.action.test.USerService.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.xiaomaoguai.easyspring.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:555)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.xiaomaoguai.easyspring.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1261)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1009)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:527)
+	... 28 more
+2014-11-11 11:28:03 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@1529185: startup date [Tue Nov 11 11:28:02 CST 2014]; root of context hierarchy
+2014-11-11 11:29:39 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 11:29:39 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a227af, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@386f16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ee3a2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@90b489, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b06cab]
+2014-11-11 11:29:39 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 11:29:39 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@1529185: startup date [Tue Nov 11 11:29:39 CST 2014]; root of context hierarchy
+2014-11-11 11:29:39 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 11:29:40 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@1529185: startup date [Tue Nov 11 11:29:39 CST 2014]; root of context hierarchy
+2014-11-11 12:06:05 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 12:06:05 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a227af, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@386f16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ee3a2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@90b489, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b06cab]
+2014-11-11 12:06:06 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 12:06:06 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@1529185: startup date [Tue Nov 11 12:06:06 CST 2014]; root of context hierarchy
+2014-11-11 12:06:07 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 12:06:08 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@1529185: startup date [Tue Nov 11 12:06:06 CST 2014]; root of context hierarchy
+2014-11-11 12:11:47 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 12:11:47 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e9a829, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a00e3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8b7f67, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c7a4e4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@178f375]
+2014-11-11 12:11:47 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 12:11:47 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@1fdc050: startup date [Tue Nov 11 12:11:47 CST 2014]; root of context hierarchy
+2014-11-11 12:11:47 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 12:11:47 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@1fdc050: startup date [Tue Nov 11 12:11:47 CST 2014]; root of context hierarchy
+2014-11-11 12:13:55 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 12:13:55 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a227af, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@386f16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ee3a2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@90b489, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b06cab]
+2014-11-11 12:13:55 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 12:13:55 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@1529185: startup date [Tue Nov 11 12:13:55 CST 2014]; root of context hierarchy
+2014-11-11 12:13:55 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 12:13:55 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@1529185: startup date [Tue Nov 11 12:13:55 CST 2014]; root of context hierarchy
+2014-11-11 12:16:24 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 12:16:24 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e9a829, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a00e3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8b7f67, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c7a4e4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@178f375]
+2014-11-11 12:16:24 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 12:16:25 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@1fdc050: startup date [Tue Nov 11 12:16:25 CST 2014]; root of context hierarchy
+2014-11-11 12:16:25 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 12:16:26 [INFO ] {"account":"admin","email":"1559018677@qq.com","icon":"zz","id":1,"name":"zzz","password":"123456"}
+2014-11-11 12:16:26 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@1fdc050: startup date [Tue Nov 11 12:16:25 CST 2014]; root of context hierarchy
+2014-11-11 12:18:12 [INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2014-11-11 12:18:12 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e9a829, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a00e3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8b7f67, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c7a4e4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@178f375]
+2014-11-11 12:18:12 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 12:18:12 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@1fdc050: startup date [Tue Nov 11 12:18:12 CST 2014]; root of context hierarchy
+2014-11-11 12:18:12 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 12:18:13 [INFO ] {"account":"admin","email":"1559018677@qq.com","icon":"zz","id":1,"name":"zzz","password":"123456"}
+2014-11-11 12:18:13 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@1fdc050: startup date [Tue Nov 11 12:18:12 CST 2014]; root of context hierarchy
+2014-11-11 12:22:15 [INFO ] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ceabc1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15eef3d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f4468b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c4c815, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@82f6ef]
+2014-11-11 12:22:15 [INFO ] Loading XML bean definitions from URL [file:/D:/workSpace/git/EasySpringMVC/target/classes/META-INF/beans/spring-mybatis.xml]
+2014-11-11 12:22:15 [INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@1baeedf: startup date [Tue Nov 11 12:22:15 CST 2014]; root of context hierarchy
+2014-11-11 12:22:15 [INFO ] Loading properties file from class path resource [config.properties]
+2014-11-11 12:22:16 [INFO ] Began transaction (1) for test context [DefaultTestContext@18d604b testClass = UserServiceTest, testInstance = com.xiaomaoguai.easyspring.action.test.UserServiceTest@7cd6cc, testMethod = testfindById@UserServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@c9d179 testClass = UserServiceTest, locations = '{classpath*:META-INF/beans/spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@1554c5f]; rollback [true]
+2014-11-11 12:22:16 [INFO ] {"account":"admin","email":"1559018677@qq.com","icon":"zz","id":1,"name":"zzz","password":"123456"}
+2014-11-11 12:22:16 [INFO ] Rolled back transaction for test context [DefaultTestContext@18d604b testClass = UserServiceTest, testInstance = com.xiaomaoguai.easyspring.action.test.UserServiceTest@7cd6cc, testMethod = testfindById@UserServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@c9d179 testClass = UserServiceTest, locations = '{classpath*:META-INF/beans/spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2014-11-11 12:22:16 [INFO ] Closing org.springframework.context.support.GenericApplicationContext@1baeedf: startup date [Tue Nov 11 12:22:15 CST 2014]; root of context hierarchy
